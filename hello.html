@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <script>
+    var abc="wHaT"
+    document.write(abc.toUpperCase())
+    document.write("<br>")
+    document.write(abc.toLowerCase())
+    document.write("<br>")
+    document.write(abc.startsWith("i"))
+    document.write("<br>")
+    var person = {
+      name:"aryan",
+      age:13,
+      school:"dps-sec-122-noida",
+    }
+    document.write(person.age)
+    document.write("<br>")
+    document.write(Math.acos(-1))
+    document.write("<br>")
+    
+    function findmax(){
+      var max=0;
+      for(i=0; i<arguments.length; i++){
+        if( arguments[i] > max ){
+          max=arguments[i]
+        }
+        
+      }
+      return max;
+    }
+    document.write(findmax(10,20,30,40,50))
+  
+
+   
+  </script>
+</body>
+
+</html>
