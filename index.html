@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+ 
+</head>
+
+<body>
+  <h1>funtions</h1>
+  what's 3x2<br>
+  <button onclick="fun(3)">reveal answers</button><br>
+  what's 9x10<br>
+  <button onclick="func(9)" >reveal answers</button>
+  <p id="abcd"></p>
+  
+  <p id="efgh"></p>
+  
+  <script>
+    function fun(x,y){
+      if (y===undefined){
+        y=2;
+      }
+      document.write(x*y);
+    }
+    function func(a,b){
+      if (b===undefined){
+        b=10;
+      }
+      document.getElementById("abcd").innerHTML=a*b;
+    }
+    function add(dc,d)
+    {
+      var c;
+      var d;
+      return c+d;
+     document.getElementById("efgh").innerHTML=add(5,6);
+     document.write("hello")
+     
+    }
+   
+  </script>
+</body>
+
+</html>
