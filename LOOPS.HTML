@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p id="num"></p>
+  <p id="string"></p>
+  <p id="boolen"></p>
+  <p id="undifined"></p>
+  <p id="null"></p>
+ 
+  
+
+
+    <script>
+     var num= 1;
+     var string= "hello";
+     var zero = null ;
+     var undifined ;
+     var a = 5;
+     var b = 5;
+
+     document.getElementById("num").innerHTML = num
+     document.getElementById("string").innerHTML = string
+     document.getElementById("null").innerHTML = zero
+     document.getElementById("undifined").innerHTML = undifined
+     document.getElementById("boolen").innerHTML = "the no is eqaul true or false:"+ (a==b) 
+
+     var time = new Date().getHours() ;
+     if (time < 12) {
+        document.write("good morning")
+     }
+     else if (time < 18) {
+        document.write("good afternoon")
+     }
+     else  {
+        document.write("good night")
+     }
+     var i = 0;
+     var text =''
+     while (i < 10) {
+        text +="<br> the no is"+ i ;
+        i++ ;
+    }
+    document.write(text)
+
+
+
+     
+
+     
+     
+
+
+
+  
+ 
+    </script>
+</body>
+</html>
