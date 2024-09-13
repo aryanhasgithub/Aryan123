@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+ 
+</head>
+
+<body>
+    <p id="stuff"></p>
+
+    <script>
+        class car {
+            constructor(brand){
+                this.brandname = brand
+            }
+        } 
+         
+        
+        class model extends car {
+            constructor(model,brand,year){
+            super(brand)
+            this.model = model
+            this.year = year
+            }
+        
+        write() {
+            return "this is a "+ this.brandname +" of model "+ this.model
+        }
+        static ageofcar(){
+            let date = new Date()
+            let year1 = date.getFullYear() - this.year
+            return year1
+
+
+
+        }
+    
+    }
+        let car1 = new model("civic","honda","2012")
+        document.getElementById("stuff").innerHTML = car1.write() + model.ageofcar()
+
+        
+
+
+
+
+    </script>
+   
+  
+</body>
+
+</html>
