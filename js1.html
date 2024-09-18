@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button onclick="myfunction()">ascending order</button>
+ <p id="demo"></p>
+ <button onclick="myfunctio()">decending order</button>
+ <p id="dem"></p>
+  
+
+
+    <script>
+        var numbers = [20,16,53,54]
+        function myfunction() {
+            document.getElementById("demo").innerHTML = 
+            numbers.sort(function (a,b) {return a-b })
+            
+        }
+        function myfunctio() {
+            document.getElementById("dem").innerHTML = 
+            numbers.sort(function (a,b) {return b-a })
+            
+        }
+        
+        function maping(n) {
+            return n*10
+            
+        }
+        var nums = numbers.map(maping)
+        document.write(nums + "<br>")
+        var x = 20;
+        var y = 20;
+
+        var o = eval(x + y) + "<br>"
+        var m = eval(x - y) + "<br>"
+        var l = eval(x / y) + "<br>"
+        var add = o+m+l;
+        document.write(add)
+
+        
+     
+     
+
+     
+     
+
+
+
+  
+ 
+    </script>
+</body>
+</html>
