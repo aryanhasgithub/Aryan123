@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var str = "hello my name is aryan"
+        var x = 10;
+        var y = 11;
+        var type = typeof(x);
+        var loc = str.search("aryan");
+        var rep = str.replace("hello","hola");
+        document.write(type)
+        document.write("<br>")
+        document.write(loc)
+        document.write("<br>")
+        document.write(rep)
+        document.write("<br>")
+        document.write( String(x) + String(y) )
+        document.write("<br>")
+        try{
+            document.write( string(x) + string(y) )
+        }
+        catch(err) {
+            document.write(err.message)
+
+        } 
+        add = (a,b) => a+b;
+        document.write("<br>")
+        document.write(add(6,9))
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
