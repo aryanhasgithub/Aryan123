@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="javason"></p>
+    <p id="async"></p>
+    <p id="id1"></p>
+
+
+
+
+
+
+
+    <script>
+
+function myDisplayer(a) {
+    document.getElementById("javason").innerHTML = a
+}
+function myDisplayer1(a) {
+    document.getElementById("async").innerHTML = a
+}
+function myDisplayer2(a) {
+    document.getElementById("id1").innerHTML = a
+}
+function myjs(){
+var myObj = {name:"aryan" , age:"12" }
+var myJSON = JSON.stringify(myObj)
+var newObj = JSON.parse(myJSON)
+myDisplayer(newObj.name)
+} 
+myjs()
+async function hello(a,b) {
+let num = await a+b
+myDisplayer1(num)
+}
+hello(6,9)
+function name(c,d) {
+let var1= c/d
+myDisplayer2(var1)
+
+}
+let prom1 = new Promise(function(myResolve,myReject){
+let x = 0
+    if (x==0){
+        myResolve("OK")
+    }
+    else {
+        myReject("ERROR")
+    }
+
+})
+prom1.then(
+    function(value){name(9,3)},
+    function(error){name("error")}
+)
+
+    </script>
+    
+</body>
+</html>
